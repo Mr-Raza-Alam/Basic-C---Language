@@ -4,10 +4,10 @@ using namespace std;
 
 class base{
  public:
-  void display(){
+  virtual void display(){
     cout<<"Base class is display"<<endl;
   }
-  void show(){// now we can able to use single pointer to access all base member's fun alongwith other classes 's member fun.
+ virtual void show(){// now we can able to use single pointer to access all base member's fun alongwith other classes 's member fun.
     cout<<"Base class is shown"<<endl;
   }
 };

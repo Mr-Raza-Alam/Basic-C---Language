@@ -35,7 +35,7 @@ void customer(book list[]){
 
  while(i<5){
    if(list[i].author == auth && list[i].title == tit){
-     cout<<"Yes,your request book is avialable\nDescription of book :- \n";
+     cout<<"\nYes,your request book is avialable\nDescription of book :- \n";
       list[i].getBookInfo();
       cout<<"Enter the no. of copies required = ";
       cin>>n;

@@ -10,7 +10,7 @@ class Calender{
     mon = 0;
     year = 0;
   }
- Calender(int d,int m,int y){
+ Calender(int d,int m,int y){// Parametrise constructor
     this->day = d;
     this->mon = m;
     this->year = y;
@@ -20,7 +20,7 @@ class Calender{
  Calender operator++(){
   // case-1: if year is leap-year
   if(year%4 == 0){
-    cout<<"Guys, you'r in the leap year! i hope you enjoy it"<<endl;
+    // cout<<"Guys, you'r in the leap year! i hope you enjoy it"<<endl;
     if(mon>0 && mon < 13){
    // case-1.1
    if(mon == 02){// feb. month
@@ -72,10 +72,12 @@ class Calender{
     if(day<28){
        day++;
      cout<<day<<"/"<<mon<<"/"<<year<<endl; 
-    }else{
+    }else if(day == 28){
         mon++;
         day = 01;
      cout<<day<<"/"<<mon<<"/"<<year<<endl;
+    }else{
+      cout<<"Invalid day"<<endl;
     }
    }else if(mon == 4 || mon == 6 || mon == 9 || mon == 11){//case-2.2 month of 30 days
     if(day>0 && day<30){
@@ -107,7 +109,7 @@ class Calender{
        }     
     }
    }else{
-    cout<<"Invalid month.Try again"<<endl;
+    cout<<this->mon<<" is an invalid month.Try again"<<endl;
     }
   }
  }
@@ -120,7 +122,7 @@ class Calender{
         cout<<"day : "<<day<<" is out of range.please enter a valid one."<<endl;
        }
     }else{
-     cout<<"Invalid month.Try again"<<endl;
+     cout<<this->mon<<" is an invalid month.Try again"<<endl;
     }
  }
 
