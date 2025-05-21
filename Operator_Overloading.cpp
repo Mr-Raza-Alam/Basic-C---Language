@@ -1,14 +1,15 @@
 #include<iostream>
 #include<string>
 using namespace std;
+class test;
 class uniary{
     int a,b,c ;
-  uniary(){
+  uniary(){// Default constructor
     a = 0;
     b = 0;
     c = 0;
   } 
- uniary(int i,int j , int k){
+ uniary(int i,int j , int k){// parameterised constructor
     this->a = i;
     this->a = j;
     this->a = k;
@@ -18,12 +19,7 @@ class uniary{
 
 };
 
-friend void uninary :: operator-(uniary &obj){
-  obj.a = -obj.a
-  obj.b = -2*obj.b;// 
-  obj.c = -4+obj.c;//
-}
- 
+
 void uniary :: display(){
     cout<<"a : "<<a<<endl;
     cout<<"b : "<<b<<endl;
@@ -37,24 +33,40 @@ void uniary :: display(){
   
   
 // };
-
+class test{
+ public : 
+ string s1;
+  test operator+(test &obj){
+    test temp;
+     temp.s1 =  (this->s1+" "+obj.s1);
+     return temp;
+  }
+  void display(){
+    cout<<"Your string : "<<s1<<endl;
+  }
+};
 int main(){
-  int a,b ;
-  cout<<"Enter 1st one number : ";
-  cin>>a;
-  cout<<"Enter 2nd one number : ";
-  cin>>b;
-  cout<<"Enter 3rd one number : ";
-  cin>>c;
-  uniary u1(a,b,c),u2(c,a,b),u3;
-     -(u3);
-    u3.display();
-  //   vector v(a),v2(b),v3;
-//   v3 = v * v2;
-//   v3.showResult();
+  test t1,t2,t3;
+ string str1,str2;
+ cout<<"Enter your 1st string : ";
+ getline(cin,str1);
+ t1.s1 = str1;
+ cout<<"Enter your 2nd string : ";
+ getline(cin,str2);
+ t2.s1 = str2;
 
+ t3 = t1 + t2;// operator overloading
+ t3.display();
     return 0;
 }
+  // int a,b,c;
+  // cout<<"Enter 1st one number : ";
+  // cin>>a;
+  // cout<<"Enter 2nd one number : ";
+  // cin>>b;
+  // cout<<"Enter 3rd one number : ";
+  // cin>>c;
+
 
 // class vector{
 //     int opr1;
