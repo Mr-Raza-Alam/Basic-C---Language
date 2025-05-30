@@ -130,7 +130,7 @@ class Calender{
 
 void dateUpgrade(){
   int dd,mm,yyyy;
-  cout<<"Enter a date.(e.g 12 04 2001) : ";
+  cout<<"Enter a date.(e.g 12 04 2001) : "; 
   cin>>dd>>mm>>yyyy;
  Calender c1(dd,mm,yyyy);
  cout<<"Your date , before increment "<<endl;
