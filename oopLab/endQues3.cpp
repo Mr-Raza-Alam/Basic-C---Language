@@ -6,7 +6,7 @@ using namespace std;
 
 int mostFreqEle(){
    map<int,int> mp;
-    int n;
+    int n,max = 0;
   cout<<"Enter the size of an array : "; cin>>n;
   cout<<"Enter "<<n<<" elements in the array "<<endl;
    int arr[n];
@@ -30,7 +30,11 @@ int mostFreqEle(){
   cout<<left<<setw(5)<<"key "<<right<<setw(8)<<"value"<<endl;
   for(auto &t : mp){
     cout<<left<<setw(10)<<t.first<<t.second<<endl;
+    if(t.second > max){
+      max = t.second;
+    }
   }
+  return max;// mostfrequent element 
 }
 
 int main(){
