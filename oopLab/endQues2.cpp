@@ -1,4 +1,4 @@
-// Error Exceptional handling
+// Error Exceptional handling-Set-A
 #include<iostream>
 #include<string>
 using namespace std;

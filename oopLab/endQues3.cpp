@@ -1,4 +1,4 @@
-// mostFrequent element
+// mostFrequent element-Set-A
 #include<iostream>
 #include<map>
 #include<iomanip>
