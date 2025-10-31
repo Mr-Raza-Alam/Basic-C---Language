@@ -67,9 +67,6 @@ for(int i = 0; i<n; i++) {
   printf("P%d ",ganttC[i]);
 
 }
-
-
-
 printf("\n");
  return 0;    
 }

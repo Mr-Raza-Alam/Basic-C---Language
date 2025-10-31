@@ -27,7 +27,7 @@ int main(){
 
   // display the process table for user
 
-  int hp = p[0].pri; // highest priority's process
+  int hp = p[0].pri; // let first as highest priority's process
   ganttC[0] = p[0].pid;
   p[0].bt -=1;
   p[0].ct +=1;

@@ -22,7 +22,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         p[i].pid = i + 1;
         p[i].at = i;   // auto set arrival = index
-        printf("Enter burst time for P%d: ", i + 1);
+        printf("Enter burst time for P%d: ", i + 1); 
         scanf("%d", &p[i].bt);
         p[i].rt = p[i].bt;  // initialize remaining time
         finished[i] = 0;
@@ -69,7 +69,7 @@ int main() {
     // Print Gantt Chart
     printf("\nGantt Chart:\n");
     for (int i = 0; i < k; i++) {
-        printf(" | P%d ", gc[i]);
+        printf("|P%d\t", gc[i]);
     }
     printf("|\n");
 
@@ -88,3 +88,4 @@ int main() {
 
     return 0;
 }
+ 
