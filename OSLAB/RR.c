@@ -14,8 +14,8 @@ int main() {
 
     struct Process p[n];
     int finished[n];  // process finished status
-    int gc[2*n];      // Gantt chart process order
-    int timeLine[2*n]; // Gantt chart timestamps
+    int gc[20];      // Gantt chart process order
+    int timeLine[20]; // Gantt chart timestamps
     int k = 0, time = 0, done = 0;
 
     // Input burst times
